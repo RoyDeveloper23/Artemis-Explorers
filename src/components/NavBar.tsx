@@ -1,5 +1,7 @@
 "use client";
 
+import { useRef } from "react";
+
 // import { useEffect } from "react";
 // import { PictureApi } from "../services/PictureApi";
 
@@ -43,7 +45,7 @@ export const NavBar = () => {
           Exoplanets
         </a>
         <a
-          href="https://www.instagram.com/brazzersofficial?igsh=MTljZGN1d2VrNTM4cw== "
+          href="https://www.instagram.com/nasa_es?igsh=MW5pMmV4Z3h4ZjEyYg%3D%3D"
           className="text-sm font-bold leading-6 text-blue-900 font-serif transition-transform duration-500 transform hover:scale-110 hover:text-black hover:border-b hover:border-black"
           target="_blank"
         >
@@ -70,7 +72,7 @@ export const NavBar = () => {
             </button>
           </div>
         </div>
-        <div className="flex p-7 lg:px-7 max-h-full w-full items-center justify-center ">
+        <div className="flex p-7 lg:px-7 max-h-full w-full items-center justify-center transition-transform duration-500 transform ">
           <img
             src="https://images-assets.nasa.gov/image/Artemis%20II%20second%20poster_11x17_300ppi_CMYK_Right/Artemis%20II%20second%20poster_11x17_300ppi_CMYK_Right~thumb.jpg?as=web"
             alt="xd"

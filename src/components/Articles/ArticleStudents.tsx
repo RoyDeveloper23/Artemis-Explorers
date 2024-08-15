@@ -1,7 +1,9 @@
 export const ArticleStudents = () => {
   return (
     <>
-      <h1>Students</h1>
+      <h1 className="text-2xl font-black text-black font-mono m-4  ">
+        Students
+      </h1>
     </>
   );
 };

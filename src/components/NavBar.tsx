@@ -1,21 +1,6 @@
 "use client";
 
-// import { useRef } from "react";
-
-// import { useEffect } from "react";
-// import { PictureApi } from "../services/PictureApi";
-
 export const NavBar = () => {
-  // const { getAsteroids } = PictureApi();
-
-  // const getAteroidsData = async () => {
-  //   const data = await getAsteroids();
-  //   console.log("ATEROIDES", data);
-  // };
-  // useEffect(() => {
-  //   getAteroidsData();
-  // }, []);
-
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100">
       <nav
@@ -25,24 +10,23 @@ export const NavBar = () => {
         <div className="flex ">
           <img alt="AREX logo" src="./ArEx.png" className="h-12 w-14 " />
         </div>
-        {/* <div className="flex place-items-between gap-x-12 "> */}
-        <a
-          href="#"
-          className="text-sm font-bold leading-6 text-blue-900 font-serif  transition-transform duration-500 transform hover:scale-110 hover:text-black hover:border-b hover:border-black"
-        >
-          Home
-        </a>
         <a
           href="#"
           className="text-sm font-bold leading-6 text-blue-900 font-serif transition-transform duration-500 transform hover:scale-110 hover:text-black hover:border-b hover:border-black "
         >
-          Artemis Mission
+          school students
         </a>
         <a
           href="#"
           className="text-sm font-bold leading-6 text-blue-900 font-serif transition-transform duration-500 transform hover:scale-110 hover:text-black hover:border-b hover:border-black"
         >
-          Exoplanets
+          university students
+        </a>
+        <a
+          href="#"
+          className="text-sm font-bold leading-6 text-blue-900 font-serif transition-transform duration-500 transform hover:scale-110 hover:text-black hover:border-b hover:border-black"
+        >
+          Researches
         </a>
         <a
           href="https://www.instagram.com/nasa_es?igsh=MW5pMmV4Z3h4ZjEyYg%3D%3D"

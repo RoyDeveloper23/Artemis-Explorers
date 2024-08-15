@@ -1,12 +1,5 @@
-import { ArticlesGeneral } from "./components/ArticlesGeneral";
-import { NavBar } from "./components/NavBar";
-
+import { Home } from "./views/Home";
+import './index.css'
 export const App = () => {
-  return (
-    <>
-      <NavBar />
-      <hr />
-      <ArticlesGeneral />
-    </>
-  );
+  return <Home />;
 };

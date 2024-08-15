@@ -7,6 +7,9 @@ export default {
       spacing: {
         128: "32rem",
       },
+      colors: {
+        'custom-gray': '#f5f5f7',
+      }
     },
   },
   plugins: [],

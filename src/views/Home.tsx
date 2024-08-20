@@ -9,9 +9,9 @@ import { useEffect } from "react";
 
 export const Home = () => {
   const slides: ISlide[] = [
-    { image: "/img1.jpg", description: "Visita al colegio gregoriano" },
-    { image: "/img2.jpg", description: "Visita al colegio americano" },
-    { image: "/img3.jpg", description: "Visita al CEN" },
+    { image: "/img1.jpg", description: "VISITA AL COLEGIO GREGORIANO" },
+    { image: "/img2.jpg", description: "VISITA AL COLEGIO AMERICANO" },
+    { image: "/img3.jpg", description: "VISITA AL CEN" },
   ];
 
   const controls = useAnimation();
@@ -83,12 +83,10 @@ export const Home = () => {
             Estamos emocionados de compartir nuestra pasión por la exploración
             espacial con la próxima generación. Durante nuestras visitas a
             colegios y centros de estudios, inspiramos y educamos a los
-            estudiantes sobre el fascinante mundo del espacio. 
+            estudiantes sobre el fascinante mundo del espacio.
           </p>
         </motion.div>
       </div>
-
-      
     </>
   );
 };

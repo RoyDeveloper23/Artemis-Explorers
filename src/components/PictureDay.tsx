@@ -9,9 +9,11 @@ export const PictureDay = () => {
   useEffect(() => {
     const pictureData = async () => {
       try {
-        const { data } = await getPicture();
-        setPicture(data.url);
-        console.log(data.url);
+        const data = await getPicture();
+        if (data && data.data.url) {
+          setPicture(data.data.url);
+          // console.log(data.url);
+        }
       } catch (error) {
         console.log(error);
       }

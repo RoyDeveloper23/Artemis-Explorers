@@ -8,11 +8,7 @@ export const ArticleStudents = () => {
       </h1>
       <div className="grid grid-cols-[1fr_2fr]  gap-2 mx-3  ">
         <div className="card">
-          <img
-            src="../../../public/images.jpeg"
-            alt="Space Place"
-            className="card-img-top"
-          />
+          <img src="/images.jpeg" alt="Space Place" className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title text-base font-semibold tracking-wide">
               NASA Kids Science

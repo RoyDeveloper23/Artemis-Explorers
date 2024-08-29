@@ -8,11 +8,7 @@ export const ArticlesUniversity = () => {
       </h1>
       <div className="grid grid-cols-[1fr_2fr]  gap-2 mx-3  ">
         <div className="card">
-          <img
-            src="../../../public/Artemis.jpg"
-            alt="Space Place"
-            className="card-img-top"
-          />
+          <img src="/Artemis.jpg" alt="Space Place" className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title text-base font-semibold tracking-wide">
               Artemis II

@@ -9,7 +9,7 @@ export const ArticlesResearches = () => {
       <div className="grid grid-cols-[1fr_2fr]  gap-2 mx-3  ">
         <div className="card">
           <img
-            src="../../../public/download.jpeg"
+            src="/download.jpeg"
             alt="Space Place"
             className="card-img-top"
           />

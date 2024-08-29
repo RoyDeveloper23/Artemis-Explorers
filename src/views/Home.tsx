@@ -6,6 +6,10 @@ import { Slider } from "../components/Slider";
 import { ISlide } from "../domain/slider";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { PictureDay } from "../components/PictureDay";
+import { ArticleStudents } from "../components/Articles/ArticleStudents";
+import { ArticlesUniversity } from "../components/Articles/ArticlesUniversity";
+import { ArticlesResearches } from "../components/Articles/ArticlesResearches";
 
 export const Home = () => {
   const slides: ISlide[] = [
@@ -40,19 +44,14 @@ export const Home = () => {
               comunidad se dedica a la divulgación y exploración. El espacio no
               tiene límites, y tu capacidad para aprender tampoco.
             </p>
-            <motion.button
-              whileHover={{
-                scale: 1.1,
-                backgroundColor: "rgba(255, 255, 255, 0.1)",
-              }}
-              className="bg-transparent text-white border Sborder-white rounded-lg p-3 mt-5 "
-            >
-              Explorar más
-            </motion.button>
           </div>
         </div>
       </div>
-
+      <br />
+      <PictureDay />
+      <ArticleStudents />
+      <ArticlesUniversity />
+      <ArticlesResearches />
       <div ref={ref} className=" w-full h-screen pt-5">
         <motion.h3
           initial={{ opacity: 0, y: -50 }}
@@ -76,14 +75,14 @@ export const Home = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={controls}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-sm mb-6 text-center flex flex-col items-center space-y-4 px-60 pb-10"
+          className="text-sm mb-6 flex flex-col items-center space-y-4 px-48 pb-10"
         >
           <i className="bi bi-rocket text-xl text-blue-400 animate-pulse mt-5"></i>
           <p>
-            Estamos emocionados de compartir nuestra pasión por la exploración
+            "Estamos emocionados de compartir nuestra pasión por la exploración
             espacial con la próxima generación. Durante nuestras visitas a
             colegios y centros de estudios, inspiramos y educamos a los
-            estudiantes sobre el fascinante mundo del espacio.
+            estudiantes sobre el fascinante mundo del espacio."
           </p>
         </motion.div>
       </div>

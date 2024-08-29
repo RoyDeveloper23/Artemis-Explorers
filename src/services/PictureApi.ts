@@ -10,13 +10,10 @@ export const PictureApi = () => {
 
   }
 
-  const getAsteroids = async () => {
-    const data = await getApi("https://api.nasa.gov/neo/rest/v1/feed");
-    return data;
-  }
+  
   return {
     getPicture,
-    getAsteroids
+    
 
   }
 }

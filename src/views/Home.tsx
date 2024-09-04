@@ -5,7 +5,7 @@ import { NavBar } from "../components/NavBar";
 // import { Slider } from "../components/Slider";
 // import { ISlide } from "../domain/slider";
 // import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { PictureDay } from "../components/PictureDay";
 import { ArticleStudents } from "../components/Articles/ArticleStudents";
 import { ArticlesUniversity } from "../components/Articles/ArticlesUniversity";

@@ -1,5 +1,5 @@
 import { Home } from "./views/Home";
-import './index.css'
+import "./index.css";
 export const App = () => {
   return <Home />;
 };

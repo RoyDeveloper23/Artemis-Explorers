@@ -12,7 +12,7 @@ export const PictureDay = () => {
         const data = await getPicture();
         if (data && data.data.url) {
           setPicture(data.data.url);
-          // console.log(data.url);
+          console.log(data);
         }
       } catch (error) {
         console.log(error);
@@ -32,7 +32,7 @@ export const PictureDay = () => {
         {picture ? (
           <img src={picture} className="center w-full "></img>
         ) : (
-          <p>Cargando imagen...</p> // Mensaje mientras carga el video
+          <p>Cargando imagen...</p>
         )}
       </div>
     </>

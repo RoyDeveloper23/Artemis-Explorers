@@ -1,33 +1,35 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
+// import { motion, useAnimation } from "framer-motion";
 import { NavBar } from "../components/NavBar";
-import { Slider } from "../components/Slider";
-import { ISlide } from "../domain/slider";
-import { useInView } from "react-intersection-observer";
+// import { Slider } from "../components/Slider";
+// import { ISlide } from "../domain/slider";
+// import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { PictureDay } from "../components/PictureDay";
 import { ArticleStudents } from "../components/Articles/ArticleStudents";
 import { ArticlesUniversity } from "../components/Articles/ArticlesUniversity";
 import { ArticlesResearches } from "../components/Articles/ArticlesResearches";
+import { Creators } from "../components/Creators";
+import { Carousel } from "../components/Carousel";
 
 export const Home = () => {
-  const slides: ISlide[] = [
-    { image: "/img1.jpg", description: "VISITA AL COLEGIO GREGORIANO" },
-    { image: "/img2.jpg", description: "VISITA AL COLEGIO AMERICANO" },
-    { image: "/img3.jpg", description: "VISITA AL CEN" },
-  ];
+  // const slides: ISlide[] = [
+  //   { image: "/img1.jpg", description: "VISITA AL COLEGIO GREGORIANO" },
+  //   { image: "/img2.jpg", description: "VISITA AL COLEGIO AMERICANO" },
+  //   { image: "/img3.jpg", description: "VISITA AL CEN" },
+  // ];
 
-  const controls = useAnimation();
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
+  // const controls = useAnimation();
+  // const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0, scale: 1 });
-    } else {
-      controls.start({ opacity: 0, y: 30, scale: 0.9 });
-    }
-  }, [inView, controls]);
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start({ opacity: 1, y: 0, scale: 1 });
+  //   } else {
+  //     controls.start({ opacity: 0, y: 30, scale: 0.9 });
+  //   }
+  // }, [inView, controls]);
   return (
     <>
       <NavBar />
@@ -52,7 +54,11 @@ export const Home = () => {
       <ArticleStudents />
       <ArticlesUniversity />
       <ArticlesResearches />
-      <div ref={ref} className=" w-full h-screen pt-5">
+      <Carousel />
+
+      <br />
+      <br />
+      {/* <div ref={ref} className=" w-full h-screen pt-5">
         <motion.h3
           initial={{ opacity: 0, y: -50 }}
           animate={controls}
@@ -85,6 +91,10 @@ export const Home = () => {
             estudiantes sobre el fascinante mundo del espacio."
           </p>
         </motion.div>
+      </div> */}
+
+      <div>
+        <Creators />
       </div>
     </>
   );

@@ -1,4 +1,5 @@
-"use client";
+import { Instagram } from "./helpers/Instagram";
+("use client");
 
 export const NavBar = () => {
   return (
@@ -28,14 +29,11 @@ export const NavBar = () => {
         Researches
       </a>
       <a
-        href="https://www.instagram.com/nasa_es?igsh=MW5pMmV4Z3h4ZjEyYg%3D%3D"
-        className="text-sm font-bold leading-6  font-rubik transition-transform duration-500 transform hover:scale-110 hover:text-black hover:border-b hover:border-black"
-        target="_blank"
+        href="https://www.instagram.com/nasa_es?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        target="blank"
       >
-        Instagram
+        <Instagram />
       </a>
-
-      {/* </div> */}
     </nav>
   );
 };
